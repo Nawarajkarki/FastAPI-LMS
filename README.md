@@ -24,7 +24,7 @@
 
         SQLALCHEMY_URL = "db_driver://db_username:db_password@db_host/db_name"
 
-### - Also while at it update the `sqlalchemy_url` in `alembic.ini` line -- 63
+- ### Also while at it update the `sqlalchemy_url` in `alembic.ini` file at line -- 63
 
 ### 2. Check Database Connection
 
@@ -32,7 +32,7 @@
 
         uvicorn src.entrypoint.main:app --reload
 
-  ![alt text](./media/image.png)
+  ![DB connection success message](./media/image.png)
 
 - If successful, you'll see a message in the terminal. Press ctrl + c to stop the server.
 
