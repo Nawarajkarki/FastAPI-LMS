@@ -24,7 +24,7 @@
 
         SQLALCHEMY_URL = "db_driver://db_username:db_password@db_host/db_name"
 
-### - Also while at it update the `sqlalchemy_url` in `alembic.ini` line -- 63
+### - Also while at it update the `sqlalchemy_url` in `alembic.ini` file at line -- 63
 
 ### 2. Check Database Connection
 
@@ -39,11 +39,13 @@
 ### 3. Run Database Migration:
 
 - Run the following command
--       alembic upgrade head
+
+         alembic upgrade head
 
 # Run the server
 
 - Run the following command to run the server:
-  uvicorn src.entrypoint.main:app --relaod
 
-Access the API Docs at localhost:8000/docs.
+      uvicorn src.entrypoint.main:app --relaod
+
+Access the API Docs at [localhost:8000/docs](localhost:8000/docs)
