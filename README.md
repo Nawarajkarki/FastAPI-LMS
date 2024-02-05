@@ -32,7 +32,7 @@
 
         uvicorn src.entrypoint.main:app --reload
 
-  ![alt text](./media/image.png)
+  ![DB connection success message](./media/image.png)
 
 - If successful, you'll see a message in the terminal. Press ctrl + c to stop the server.
 
