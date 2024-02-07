@@ -2,15 +2,16 @@ from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
+import os
+
 
 # Please Update this like with your DB connection details
 # And also line [ 63 ] of alembic.ini while you are at this.
-SQLALCHEMY_URL = "db_driver://db_username:db_password@db_host/db_name"
+SQLALCHEMY_URL = "postgresql://postgres:nope@localhost:5432/LMS"
+
 
 
 engine  = create_engine(SQLALCHEMY_URL)
-
-
 
 Base = declarative_base()
 
@@ -23,6 +24,7 @@ def get_db():
         yield db
     finally:
         db.close()
+
 
 
 

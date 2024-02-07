@@ -26,6 +26,8 @@ class UserServices():
         return user
     
     
+    
+    
     def create_new_user(self, user : schemas.UserCreate):
         
         obj = self.crud.get_user_by_email(user.email)
