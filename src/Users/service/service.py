@@ -20,10 +20,10 @@ class UserServices():
         
         if user is None :
             raise HTTPException(status_code=404, detail=f"User with USER ID -- {user_id} doesnot exist.")
-        elif not user:
-            raise HTTPException(status_code=404, detail="User table is empty")
         
         return user
+    
+    
     
     
     def create_new_user(self, user : schemas.UserCreate):
